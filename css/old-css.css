@@ -1210,7 +1210,7 @@ article iframe,
   padding: 19px 0px;
   border-bottom: 1px solid #ddd;
   text-decoration: underline;
-  font-size: 1rem;
+  font-size: 14px;
   color: #0b0b0b;
 }
 
@@ -2980,7 +2980,9 @@ section.post .navigation a.next {
   background: #fff;
   transition: all .4s ease;
 }
-
+.subtitle{
+  font-size: 16px;
+}
 .other-posts .post-block:hover {
   /*cursor: pointer;
 	box-shadow: 0px 0px 32px 5px rgba(0, 0, 0, 0.05);*/
@@ -6934,12 +6936,19 @@ td.datepickerSpecial.datepickerSelected a {
 }
 
 .breadcrumb {
-  background: transparent;
-  padding: 20px 0 10px 20px;
-  font-size: 12px;
-  margin-bottom: 0px;
+  background: transparent !important;
+  padding: 20px 0 10px 20px !important;
+  font-size: 12px !important;
+  margin-bottom: 0px !important;
 }
-
+.container{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.prodaji{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 .node-type-question-unswers .padding-80 {
   padding-top: 5px;
 }
@@ -8118,6 +8127,8 @@ section.rss .form-radios {
   margin-bottom: 30px;
 }
 
+
+
 .choose-set .set-block {
   max-width: 100%;
 }
@@ -8153,6 +8164,9 @@ section.rss .form-radios {
   font-weight: 800;
   font-size: 21px;
 }
+
+
+
 
 .choose-set .set-block .wrap-bottom h3 {
   top: 8px;
@@ -8386,7 +8400,49 @@ section.reviews h2 {
 
 /*end*/
 
+@media screen and (max-width: 900px) {
+  .choose-set .set-block,
+  .ready-sets .set-block{
+    width: 100%;
+  }
+  .choose-set .set-block .wrap-bottom h3,
+  .ready-sets .set-block .wrap-bottom h3 {
+    font-size: 16px;
+  }
+  
+  .ready-sets .set-block .wrap-bottom a.blue-btn{
+    padding-left: 26px;
+  }
+  .block_blog_left{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .posts-preview .preview-block .deskr{
+    min-height: 250px;
+  }
 
+  .seminars .about-seminar{
+    border-right: none;
+  }
+  .our_seminars{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .our_seminars > div{
+    margin-bottom: 30px;
+  }
+  .seminars .about-seminar .person-name p{
+    padding-left: 30px;
+  }
+  .block.pane-header .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .block.pane-header .nav>li a{
+    font-size: 12px;
+  }
+  
+}
 
 
 
