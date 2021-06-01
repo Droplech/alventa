@@ -9137,4 +9137,44 @@ section.reviews h2 {
   .three-results .col-lg-6 {
     width: 100%;
   }
+  .partners .nav-slick.slick-next{
+    right: -5px;
+  }
+  .partners .nav-slick.slick-prev {
+    left: -10px;
+  }
+  .slider_content{
+    width: 95%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+
+  }
+  .blog_wrapper{
+    padding: 0 20px !important;
+  }
+  .block.pane-header #select-form-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+ 
+  .block.pane-header .pane-custom-default-module-taxonomy-select{
+    top: 90px;
+  }
+  .ready-sets .set-block .note{
+    right: -19px;
+    top: -90px;
+  }
+  .blog_wrapper .container{
+    width: 100%;
+  }
+ 
+}
+@media screen and (max-width: 500px) {
+  .block.pane-header .nav{
+    flex-direction: column;
+    
+  }
+  .block.pane-header .pane-custom-default-module-taxonomy-select{
+    top: 110px;
+  }
 }
