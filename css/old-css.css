@@ -691,13 +691,17 @@ form .btn.btn-default:focus {
 
 .carousel .carousel-control.left {
   left: -30px;
+  background-image: none;
 }
 
 .carousel .carousel-control.right {
   right: -30px;
+  background-image: none;
 }
 
-
+.carousel-control:focus, .carousel-control:hover{
+  color: #000 !important;
+}
 
 html {
   font-size: 14px;
@@ -1039,6 +1043,7 @@ article iframe,
   font-size: 13px;
   font-weight: 700;
   color: #0b0b0b;
+  background-color: transparent;
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
@@ -1071,7 +1076,7 @@ article iframe,
 
 .block.pane-header .nav>li>a:focus,
 .block.pane-header .nav>li>a:hover {
-  background: none;
+  background: none !important;
 }
 
 .block.pane-header .nav>li>a::after{
@@ -1113,6 +1118,7 @@ article iframe,
 
 .block.pane-header .dropdown-menu li a:hover {
   background: none;
+  background-color: none !important;
   text-decoration: none;
 }
 
@@ -1916,7 +1922,7 @@ article iframe,
   padding: 11px 0px;
   transition: all .3s ease-in-out;
   color: #fff;
-  font-size: 0.85714rem;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1954,12 +1960,12 @@ article iframe,
 
 section.deskr:not(.our-blog-section) {
   padding: 160px 0 180px 0;
-  background: #fff url("../img-static/ready-set-bg2.jpg") no-repeat top center;
+  background: #fff url("../img/buhgalter/ready-set-bg2.jpg") no-repeat top center;
   background-size: cover;
 }
 
 .page-consult-plus-buhgalteru section.deskr:not(.our-blog-section) {
-  background: #fff url("../img-static/ready-set-bg1.jpg") no-repeat top center;
+  background: #fff url("../img/buhgalter/ready-set-bg1.jpg") no-repeat top center;
   background-size: cover;
 }
 
@@ -1990,7 +1996,7 @@ section.deskr:not(.our-blog-section) {
 
 section.deskr h1 {
   color: #3760ad;
-  font-size: 2.14286rem;
+  font-size: 30px;
   font-weight: 700;
   text-align: left;
   line-height: 1;
@@ -2025,12 +2031,12 @@ section.capability-system .block-cap img {
 
 section.capability-system .block-cap p {
   margin: 0;
-  line-height: 1.57143rem;
-  font-size: 1.42857rem;
+  line-height: 1;
+  font-size: 20px;
 }
 
 .order-form {
-  background: #fff url("../img-static/order-form-bg.jpg") no-repeat top center;
+  background: #fff url("../img/buhgalter/order-form-bg.jpg") no-repeat top center;
   background-size: cover;
 }
 
@@ -2086,13 +2092,13 @@ section.capability-system .block-cap p {
 
 .order-form .wrap-form .first-step input[type="text"] {
   width: 255px;
-  font-size: 1.14286rem;
+  
   padding-bottom: 10px;
   padding: 0;
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #ddd;
-  font-size: 0.92857rem;
+  font-size: 14px;
   color: #777;
   outline: none;
   margin: 0 0 25px 30px;
@@ -2110,7 +2116,7 @@ section.capability-system .block-cap p {
   height: 100px;
   border-radius: 50%;
   background: #fff;
-  font-size: 4.28571rem;
+  font-size: 60px;
   color: #1f4c9a;
   text-align: center;
   font-weight: 700;
@@ -2122,7 +2128,7 @@ section.capability-system .block-cap p {
 }
 
 .order-form .wrap-form .step-num {
-  font-size: 4.28571rem;
+  font-size: 60px;
   color: #1f4c9a;
   text-align: center;
   font-weight: 700;
@@ -2139,8 +2145,8 @@ section.capability-system .block-cap p {
 
 .order-form .wrap-form .step p {
   margin-top: 10px;
-  font-size: 1.28571rem;
-  line-height: 1.57143rem;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .comparison-table {
@@ -2200,7 +2206,7 @@ section.capability-system .block-cap p {
 
 section.versions-system {
   text-align: center;
-  background: #fff url("../img-static/version-system-bg.jpg") no-repeat top center;
+  background: #fff url("../img/buhgalter/version-system-bg.jpg") no-repeat top center;
   background-size: cover;
 }
 
@@ -2225,7 +2231,7 @@ section.versions-system .version-type h3 {
   color: #fff;
   margin: 0;
   line-height: 1.2;
-  font-size: 1.14286rem;
+  font-size: 16px;
 }
 
 section.free-capabilities {
@@ -2262,7 +2268,7 @@ section.free-capabilities .list-capabities ul li {
   padding: 0;
   text-indent: 10px;
   background: url("../img-static/bullet.png") no-repeat left 10px;
-  font-size: 1rem;
+  font-size: 14px;
   list-style: none;
   color: #5c5c5c;
 }
@@ -2382,7 +2388,7 @@ section.reviews .carousel .angle-left {
 }
 
 .choose-set .request-call {
-  background: url(../img-static/request-call-bg.jpg) no-repeat top center;
+  background: url('../img/buhgalter/request-call-bg.jpg') no-repeat top center;
 }
 
 .choose-set .request-call .wrap-form {
@@ -3188,7 +3194,7 @@ form .btn.btn-primary {
   text-align: center;
   background: #64b9fb;
   color: #fff;
-  font-size: 0.85714rem;
+  font-size: 12px;
   font-weight: 700;
   border: none;
   border-radius: 0;
@@ -7223,7 +7229,7 @@ section.rss .form-radios {
   text-align: center;
   background: #64b9fb;
   color: #fff;
-  font-size: 0.85714rem;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   transition: all .3s ease-in-out;
@@ -8554,7 +8560,7 @@ section.reviews h2 {
   }
 
   .order-form .wrap-form {
-    width: auto;
+    width: 90%;
   }
 
   .consult-plus img {
@@ -9110,7 +9116,7 @@ section.reviews h2 {
 
 
   .page-consult-plus-buhgalteru section.deskr:not(.our-blog-section) {
-    background: #fff url("../img-static/ready-set-bg1-mobile.jpg") no-repeat center top;
+    background: #fff url("../img/buhgalter/ready-set-bg1-mobile.jpg") no-repeat center top;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -9169,6 +9175,15 @@ section.reviews h2 {
   }
  
 }
+
+@media screen and (max-width: 800px) {
+  .block_form_send{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .block.pane-header .nav{
     flex-direction: column;
