@@ -13,26 +13,36 @@
     type="image/vnd.microsoft.icon" />
 
 
+  <title>Кадровый аудит: важные аспекты эффективных трудовых отношений. Решаем сложные задачи эффективно</title>
 
-  <title>О компании | Консультант Плюс – продажа, установка и поддержка | ООО «Альвента»</title>
   <link type="text/css" rel="stylesheet" href="css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
   <link type="text/css" rel="stylesheet" href="css/css_Q0oTP73hs2EvnMYQAYyE7UtLkWYTVoTQ8rvKpxOym7U.css" media="all" />
-
+  <link type="text/css" rel="stylesheet" href="css/css_YCaw11IgCsmDcgzsF7HrJlezs4O8GAByNoVha71k7eU.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link type="text/css" rel="stylesheet" href="css/css_7r6OeHDKqd4RZWovP3Ex6Ir3fXTzU9e5-8tAq78MTIs.css" media="all" />
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+  
+  
   <link href="css/old-css.css" rel="stylesheet">
 
   <script src="js/js_Gz-4LKmWDkhFJLJEfT2bKrK-dh5Mh1DjUmTWd3tyl6k.js"></script>
   <script src="js/js_NXXzrlHNT0kYYfc1flSawbb61eUTX45b6ggJlZYP6gc.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="js/js_Umlye2Tf3iMDtIes6M3cQduZDzIYBkGi7IRbMLxica0.js"></script>
-
+  <!-- <script src="js/js_Umlye2Tf3iMDtIes6M3cQduZDzIYBkGi7IRbMLxica0.js"></script> -->
   <script src="js/js_hOcT3WR87AuNSohmoJLHkWY3UfIIwfhFRwQOa_4haLg.js"></script>
   <script src="js/js_oYVKp-cluFZQnjxYMtXDmhZY3bwT8PYHYk6oiRMAQDw.js"></script>
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <script src="js/lib_video/jquery.videobackground.js"></script>
+
+  
+
+
+
   <script>
     jQuery.extend(Drupal.settings, {
       "basePath": "\/",
@@ -58,12 +68,16 @@
           "sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js": 1,
           "sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_load.js": 1,
           "sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_inline.js": 1,
+          "sites\/all\/modules\/contrib\/views\/js\/base.js": 1,
           "sites\/all\/themes\/bootstrap\/js\/misc\/_progress.js": 1,
+          "sites\/all\/modules\/contrib\/views\/js\/ajax_view.js": 1,
           "sites\/all\/modules\/custom\/custom_default_module\/js\/after_ajax.js": 1,
           "sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js": 1,
           "0": 1,
+          "sites\/all\/modules\/contrib\/field_group\/field_group.js": 1,
           "sites\/all\/themes\/bootstrap\/js\/jquery.matchHeight.js": 1,
-          "sites\/all\/themes\/bootstrap\/js\/misc\/ajax.js": 1
+          "sites\/all\/themes\/bootstrap\/js\/misc\/ajax.js": 1,
+          "sites\/all\/themes\/bootstrap\/js\/modules\/views\/js\/ajax_view.js": 1
         },
         "css": {
           "modules\/system\/system.base.css": 1,
@@ -79,6 +93,7 @@
           "sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css": 1,
           "sites\/all\/modules\/contrib\/ctools\/css\/ctools.css": 1,
           "sites\/all\/modules\/contrib\/panels\/css\/panels.css": 1,
+          "sites\/all\/modules\/contrib\/date\/date_views\/css\/date_views.css": 1,
           "public:\/\/ctools\/css\/88fd5f47b7988a728355b5ed3ec82122.css": 1,
           "sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/flexible\/flexible.css": 1,
           "public:\/\/ctools\/css\/0a6bf8cdc1d573ee5e9cf0d112daa1e3.css": 1,
@@ -104,7 +119,7 @@
         "location": {
           "source": "smart_ip",
           "ip_address": "77.122.248.149",
-          "timestamp": 1622192399
+          "timestamp": 1622729252
         }
       },
       "smart_ip_src": {
@@ -116,6 +131,9 @@
         "views": {
           "content": {
             "displays": {
+              "block_12": {
+                "filters": []
+              },
               "block": {
                 "filters": []
               },
@@ -123,6 +141,27 @@
                 "filters": []
               }
             }
+          },
+          "calendar": {
+            "displays": {
+              "block_1": {
+                "filters": []
+              }
+            }
+          }
+        }
+      },
+      "views": {
+        "ajax_path": "\/views\/ajax",
+        "ajaxViews": {
+          "views_dom_id:f34997f9fd13bfa83671ad6765ad792a": {
+            "view_name": "calendar",
+            "view_display_id": "block_1",
+            "view_args": "2021-06",
+            "view_path": "node\/6169",
+            "view_base_path": "calendar-node-field-date-time\/month",
+            "view_dom_id": "f34997f9fd13bfa83671ad6765ad792a",
+            "pager_element": 0
           }
         }
       },
@@ -156,7 +195,7 @@
       },
       "urlIsAjaxTrusted": {
         "\/system\/ajax": true,
-        "\/about-company\/o-kompanii": true
+        "\/content\/kadrovyy-audit-vazhnye-aspekty-effektivnyh-trudovyh-otnosheniy-reshaem-slozhnye-zadachi": true
       },
       "googleanalytics": {
         "trackOutbound": 1,
@@ -173,6 +212,9 @@
         "loop": 1,
         "video_id": "#block-views-content-block-3",
         "auto_play": 1
+      },
+      "field_group": {
+        "div": "full"
       },
       "bootstrap": {
         "anchorsFix": "0",
@@ -205,26 +247,19 @@
     });
   </script>
 
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!--здесь заменить при переносе -->
-  <script src="js/lib_video/jquery.videobackground.js"></script>
-
+ 
+ 
 </head>
 
 <body >
-
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable">Перейти к основному содержанию</a>
-  </div>
-
+  
 
   <div class="main-container">
 
     <header role="banner" id="page-header">
 
       <div class="region region-header">
-        <section  class="block pane-header ">
+        <section class="block  pane-header c">
 
 
           <div >
@@ -239,7 +274,7 @@
 
                     <div class="pane-content">
                       <div
-                        class="view view-content view-id-content view-display-id-block row inf  view-dom-id-a232c1539a5755e24a028357f9874041">
+                        class="view view-content view-id-content view-display-id-block row inf  view-dom-id-495f224834d3f40ce2f18d18e73ccfaf">
 
 
 
@@ -247,11 +282,11 @@
                           <div class="col-lg-12 annul-pdn preview-block">
 
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                              <div class="text-center"><a href="/"><img typeof="foaf:Image" class="img-responsive"
+                              <div class="text-center"><a href="#"><img typeof="foaf:Image" class="img-responsive"
                                     src="img/alventa_konsultantplyus_kupit.jpg"
                                     width="5282" height="1011" alt="" /></a></div>
                             </div>
-                            <div class="prodaji col-xs-12 col-sm-6 col-md-4 col-lg-4"> Продажа и сопровождение системы
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> Продажа и сопровождение системы
                               КонсультантПлюс </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 
@@ -282,7 +317,9 @@
 
                     <div class="pane-content">
                       <div id="select-form-wrapper">
-                        <form action="/about-company/o-kompanii" method="post" id="city-form" accept-charset="UTF-8">
+                        <form
+                          action="/content/kadrovyy-audit-vazhnye-aspekty-effektivnyh-trudovyh-otnosheniy-reshaem-slozhnye-zadachi"
+                          method="post" id="city-form" accept-charset="UTF-8">
                           <div>
                             <div class="form-item form-item-select-city form-type-select form-group"><select
                                 class="form-control form-select" id="edit-select-city" name="select_city">
@@ -299,7 +336,7 @@
                               </div>
                               <div class="city-field"><span class="work-time">ПН-ПТ 09:00-18:00</span></div>
                             </div><input type="hidden" name="form_build_id"
-                              value="form-x8wGsOMRHeYmCXr3LSHh9FNbxbZ7CCWMtTLjC0ors5o" />
+                              value="form-O3a_5dnZtG8uwVQ97qBX4vz9UCySege0HtKSMdvSeic" />
                             <input type="hidden" name="form_id" value="city_form" />
                           </div>
                         </form>
@@ -316,7 +353,7 @@
                     <div class="pane-content">
                       <p><a href="#" type="button" class="blue-btn btn-callback" data-toggle="modal"
                           data-target="#checkoutModal">Перезвонить ?</a>
-                        <!--<a class="sign-in" href="#">Вход в личный кабинет</a> -->
+                        
                       </p>
                     </div>
 
@@ -333,18 +370,17 @@
                           class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                       <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="menu nav">
-                          <li class="first expanded active-trail active dropdown active"><a href="#"
-                              class="active-trail dropdown-toggle active" data-toggle="dropdown">О компании <span
-                                class="caret"></span></a>
+                          <li class="first expanded dropdown"><a href="#"
+                              class="dropdown-toggle" data-toggle="dropdown">О компании <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                               <li class="first leaf"><a href="#">История и награды</a>
                               </li>
                               <li class="leaf"><a href="#">Отзывы</a></li>
-                              <li class="expanded dropdown-submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Некоммерческие проекты</a>
+                              <li class="expanded dropdown-submenu"><a href="#"
+                                  class="dropdown-toggle" data-toggle="dropdown">Некоммерческие проекты</a>
                                 <ul class="dropdown-menu">
-                                  <li class="first leaf">
-                                    <a href="#">Профессиональные конкурсы</a></li>
+                                  <li class="first leaf"><a
+                                      href="#">Профессиональные конкурсы</a></li>
                                   <li class="leaf"><a href="#">Работа с
                                       библиотеками</a></li>
                                   <li class="last leaf"><a href="#">Работа
@@ -364,7 +400,7 @@
                                   обслуживание</a></li>
                               <li class="leaf"><a href="#">Бесплатные приложения</a>
                               </li>
-                              <li class="leaf"><a href="#"
+                              <li class="leaf"><a href="/#"
                                   title="У КонсультантПлюс есть можемтво некомерческих продуктов. Среди них, в рамках программы «Правовая поддрежка науки и образования», существует «Онлайн-версия КонсультантПлюс: Студент».">КонсультантПлюс
                                   бесплатно</a></li>
                               <li class="leaf"><a href="#">Обучение и сертификация</a></li>
@@ -432,8 +468,9 @@
 
 
                     <div class="pane-content">
-                      <form class="form-search content-search" action="/about-company/o-kompanii" method="post"
-                        id="search-block-form" accept-charset="UTF-8">
+                      <form class="form-search content-search"
+                        action="/content/kadrovyy-audit-vazhnye-aspekty-effektivnyh-trudovyh-otnosheniy-reshaem-slozhnye-zadachi"
+                        method="post" id="search-block-form" accept-charset="UTF-8">
                         <div>
                           <div>
                             <h2 class="element-invisible">Форма поиска</h2>
@@ -447,7 +484,7 @@
                                 class="element-invisible btn btn-primary form-submit" type="submit" id="edit-submit"
                                 name="op" value="Поиск">Поиск</button>
                             </div><input type="hidden" name="form_build_id"
-                              value="form-9HS6y6Ckes0STFg9TPz4u_43LfkmiAPjMXhmFHR_JA8" />
+                              value="form-dy5FHIpAYPeve0j-G1BgokawneLVsaMz21kGB9aymAc" />
                             <input type="hidden" name="form_id" value="search_block_form" />
                           </div>
                         </div>
@@ -474,33 +511,18 @@
         <div class="container">
           <h2 class="element-invisible">Вы здесь</h2>
           <div class="breadcrumb"><span class="inline odd first"><a href="#">Главная</a></span> <span
-              class="delimiter">»</span> <span class="inline even last">О компании</span></div>
+              class="delimiter">»</span> <span class="inline even"><a href="#">Блог</a></span> <span
+              class="delimiter">»</span> <span class="inline odd"><a href="#">Прошедшие
+                семинары</a></span> <span class="delimiter">»</span> <span class="inline even last">Кадровый аудит:
+              важные аспекты эффективных трудовых отношений. Решаем сложные задачи эффективно</span></div>
         </div>
         <div class="region region-content">
-          <section id="block-menu-menu-about-compan"
-            class="block block-menu col-block-adv side-menu col-lg-3 col-md-3 col-sm-12 side-other clearfix">
-
-
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span
-                class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="menu nav">
-                <li class="first leaf active-trail active"><a href="#" title=""
-                    class="active-trail active">О компании</a></li>
-                <li class="leaf"><a href="#" title="">История и награды</a></li>
-                <li class="leaf"><a href="#" title="">Отзывы</a></li>
-                <li class="leaf"><a href="#" title="">Некоммерческие проекты</a>
-                </li>
-                <li class="leaf"><a href="#" title="">Карьера у нас</a></li>
-                <li class="last leaf"><a href="#" title="">Контакты</a></li>
-              </ul>
-            </div>
-          </section>
           <section id="block-system-main" class="block block-system clearfix">
 
 
-            <div about="/about-company/o-kompanii" typeof="sioc:Item foaf:Document"
-              class="ds-2col-stacked-fluid node node-about-company view-mode-full  group-one-column clearfix">
+            <div
+              about="/content/kadrovyy-audit-vazhnye-aspekty-effektivnyh-trudovyh-otnosheniy-reshaem-slozhnye-zadachi"
+              typeof="sioc:Item foaf:Document" class="ds-2col-stacked-fluid node node-article view-mode-full  clearfix">
 
 
               <div class="group-header">
@@ -510,54 +532,373 @@
 
                   <div class="group-left col-md-8 col-lg-8 col-sm-12">
                     <article>
-                      <h1>О компании</h1>
-                      <h4><span style="font-size:16px"><span style="font-family:verdana,geneva,sans-serif">Официальный
-                            представитель Консультант Плюс ООО «Альвента».<img alt="Альвента" height="377"
-                              src="/sites/default/files/alventa_konsultantplyus.jpg" style="float:right"
-                              width="400" /></span></span></h4>
-                      <p><span style="font-size:16px"><span style="font-family:verdana,geneva,sans-serif">Компания
-                            «Альвента» — региональный информационный центр Сети КонсультантПлюс. </span></span></p>
-                      <p> </p>
-                      <h4 class="rtejustify"><span style="font-size:16px"><strong><span
-                              style="font-family:verdana,geneva,sans-serif" class="subtitle">Доверие
-                              клиентов</span></strong></span></h4>
-                      <p><span style="font-size:16px"><span style="font-family:verdana,geneva,sans-serif">Нас выбрали
-                            более 3 000 организаций из самых разных отраслей бизнеса и государственного сектора. К
-                            каждому клиенту мы находим индивидуальный подход и уделяем максимум внимания.</span></span>
-                      </p>
-                      <p> </p>
-                      <h4><span style="font-size:16px"><strong><span style="font-family:verdana,geneva,sans-serif"
-                              class="subtitle" class="subtitle">Широкая география</span></strong></span>
-                      </h4>
-                      <p><span style="font-size:16px"><span style="font-family:verdana,geneva,sans-serif">Официально
-                            представляем систему КонсультантПлюс в семи регионах России: Москва, Саратов, Омск,
-                            Новосибирск, Барнаул, Томск, Красноярск.</span></span></p>
-                      <p><span style="font-size:16px"><span style="font-family:verdana,geneva,sans-serif">Занимаемся
-                            установкой и обслуживанием системы уже 25 лет.</span></span></p>
-                      <p> </p>
-                      <h4><span style="font-size:16px"><strong><span style="font-family:verdana,geneva,sans-serif"><a
-                                href="#" target="_self"
-                                class="subtitle">Уникальный
-                                сервис</a></span></strong></span></h4>
-                      <p><span style="font-size:16px"><span style="font-family:verdana,geneva,sans-serif">Разрабатываем
-                            уникальные сервисные предложения, направленные на улучшение рабочего процесса наших
-                            клиентов.</span></span></p>
-                      <p> </p>
-                      <h4><span style="font-size:16px"><strong><span style="font-family:verdana,geneva,sans-serif"
-                              class="subtitle">Высокий стандарт
-                              качества</span></strong></span></h4>
-                      <p><span style="font-size:16px"><span style="font-family:verdana,geneva,sans-serif">Обеспечиваем
-                            высококлассный сервис единого стандарта каждому клиенту.</span></span></p>
-                      <p> </p>
-                      <h4><span style="font-size:16px"><strong><span style="font-family:verdana,geneva,sans-serif"
-                              class="subtitle">Только
-                              КонсультантПлюс</span></strong></span></h4>
-                      <p><span style="font-size:16px"><span style="font-family:verdana,geneva,sans-serif">Мы занимаемся
-                            одним делом. Наша единственная задача — сделать работу с законодательством проще и
-                            безопасней с помощью справочной правовой системы КонсультантПлюс.</span></span></p>
+                      <h2>Кадровый аудит: важные аспекты эффективных трудовых отношений. Решаем сложные задачи
+                        эффективно</h2>31.05.21<p><span style="color:#000000"><span style="font-size:14px"><span
+                              style="font-family:verdana,geneva,sans-serif">21 мая мы провели онлайн-семинар на
+                              тему "Кадровый аудит: важные аспекты эффективных трудовых отношений. Решаем сложные задачи
+                              эффективно".</span></span></span></p>
+                      <p><span style="color:#000000"><span style="font-size:14px"><span
+                              style="font-family:verdana,geneva,sans-serif">Предлагаем вам ознакомиться с интересным
+                              фрагментом онлайн-семинара, в котором лектор А.К. Зуйков поделился мнением, на что стоит
+                              обратить внимание работодателю при организации дистанционной работы
+                              сотрудника.</span></span></span></p>
+                      <p><iframe align="middle" frameborder="0" height="380" scrolling="no"
+                          src="https://www.youtube.com/embed/AQfJrL7VBus" width="680"></iframe></p>
+                      <p><span style="color:#000000"><span style="font-family:verdana,geneva,sans-serif"><span
+                              style="font-size:14px">Зуйков Александр Константинович — независимый бизнес-консультант,
+                              юрист, эксперт по решению внештатных ситуаций в области трудового права, автор статей,
+                              семинаров и публикаций по вопросам трудового законодательства.</span></span></span></p>
+                      <blockquote>
+                        <p><span style="color:#000000"><span style="font-size:14px"><span
+                                style="font-family:verdana,geneva,sans-serif">Лакуцевич Татьяна Александровна, начальник
+                                отдела юридической и кадровой работы Институт физики прочности и материаловедения СО
+                                РАН, г. Томск:</span></span></span></p>
+                        <p><span style="color:#000000"><span style="font-size:14px"><span
+                                style="font-family:verdana,geneva,sans-serif">«Семинар был, безусловно, полезен, много
+                                актуальных тем успели рассмотреть. Выражаю благодарность лектору вебинара Зуйкову А.В.
+                                за работу, слушаю его лекции всегда с удовольствием».</span></span></span></p>
+                      </blockquote>
+                      <p><span style="font-family:verdana,geneva,sans-serif"><span style="font-size:14px"><span
+                              style="color:#000000">Еще больше отзывов о наших лекторах и семинарах вы можете
+                              найти</span> <a href="#"
+                              target="_blank">тут</a>.</span></span></p>
+                      <div class="navigation">
+                        <div id="prevnext-previous" class="prevnext"><a
+                            href="#">Назад</a></div>
+                      </div>
+                      <section id="block-views-content-block-12" class="block block-views clearfix">
+
+
+                        <div
+                          class="view view-content view-id-content view-display-id-block_12 other-posts view-dom-id-39eb0c43bc1fb358e8466c15000b9e0d">
+                          <div class="view-header">
+                            <h2>Еще материалы по теме</h2>
+                          </div>
+
+
+
+                          <div class="view-content">
+                            <div class="post-block">
+
+                              <div class="seminar-block first">
+                                <div class="wrap-img"><a
+                                    href="#"><img
+                                      typeof="foaf:Image" class="img-responsive"
+                                      src="img/seminar/keysy_po_pravovym_sporam_3.12.jpg"
+                                      width="500" height="300" alt="" /></a></div>
+                                <h3><a href="#">Правовые
+                                    кейсы по земельным спорам - чего стоит бояться?</a></h3>
+                                <p>13.12.18</p>
+                              </div>
+                            </div>
+                            <div class="post-block">
+
+                              <div class="seminar-block first">
+                                <div class="wrap-img"><a
+                                    href="#"><img
+                                      typeof="foaf:Image" class="img-responsive"
+                                      src="img/seminar/snimok_2.png"
+                                      width="500" height="300" alt="" /></a></div>
+                                <h3><a
+                                    href="#">Договор
+                                    банковского счета по обновленному ГК РФ с 2018 года</a></h3>
+                                <p>11.01.18</p>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+
+
+                        </div>
+                      </section>
                     </article>
                   </div>
 
+                  <div class="group-right col-md-4 col-lg-4 col-sm-12">
+                    <aside>
+                      <div class="chapter widget">
+                        <section id="block-menu-menu-blog-menu" class="block block-menu clearfix">
+
+                          <h2 class="block-title">Разделы блога</h2>
+
+                          <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#myNavbar"><span class="icon-bar"></span><span class="icon-bar"></span><span
+                              class="icon-bar"></span></button>
+                          <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="menu nav">
+                              <li class="first leaf"><a href="#" title="">Все</a></li>
+                              <li class="leaf"><a href="#" title="">Вопрос/ответ</a></li>
+                              <li class="leaf"><a href="#" title="">Новости КонсультантПлюс</a>
+                              </li>
+                              <li class="leaf"><a href="#" title="">Новости «Альвенты»</a></li>
+                              <li class="leaf"><a href="#" title="">Прошедшие семинары</a></li>
+                              <li class="last leaf"><a href="#" title="">Материалы «Первой полосы»</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </section>
+                      </div>
+                      <div class="widget calendar-widget">
+                        <section id="block-views-calendar-block-1" class="block block-views clearfix">
+
+                          <h2 class="block-title">Календарь семинаров</h2>
+
+                          <div
+                            class="view view-calendar view-id-calendar view-display-id-block_1 view-dom-id-f34997f9fd13bfa83671ad6765ad792a">
+                            <div class="view-header">
+                              <div class="date-nav-wrapper clearfix">
+                                <div class="date-nav item-list">
+                                  <div class="date-heading">
+                                    <h3>Июнь</h3>
+                                  </div>
+                                  <ul class="pager">
+                                    <li class="date-prev">
+                                      <a href="#"
+                                        title="К предыдущему месяцу" rel="nofollow">&laquo;</a> </li>
+                                    <li class="date-next">
+                                      <a href="#"
+                                        title="К следующему месяцу" rel="nofollow">&raquo;</a> </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+
+
+                            <div class="view-content">
+                              <div class="calendar-calendar">
+                                <div class="month-view">
+
+                                  <table class="mini">
+                                    <thead>
+                                      <tr>
+                                        <th class="days sun">
+                                          вс </th>
+                                        <th class="days mon">
+                                          пн </th>
+                                        <th class="days tue">
+                                          вт </th>
+                                        <th class="days wed">
+                                          ср </th>
+                                        <th class="days thu">
+                                          чт </th>
+                                        <th class="days fri">
+                                          пт </th>
+                                        <th class="days sat">
+                                          сб </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td id="calendar-2021-05-30" class="sun mini empty">
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-05-31" class="mon mini empty">
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-01" class="tue mini past has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 1 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-02" class="wed mini past has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 2 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-03" class="thu mini past has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 3 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-04" class="fri mini today has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 4 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-05" class="sat mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 5 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td id="calendar-2021-06-06" class="sun mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 6 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-07" class="mon mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 7 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-08" class="tue mini future has-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-on"> <a
+                                              href="#">8</a>
+                                          </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-09" class="wed mini future has-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-on"> <a
+                                              href="#">9</a>
+                                          </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-10" class="thu mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 10 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-11" class="fri mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 11 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-12" class="sat mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 12 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td id="calendar-2021-06-13" class="sun mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 13 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-14" class="mon mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 14 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-15" class="tue mini future has-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-on"> <a
+                                              href="#">15</a>
+                                          </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-16" class="wed mini future has-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-on"> <a
+                                              href="#">16</a>
+                                          </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-17" class="thu mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 17 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-18" class="fri mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 18 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-19" class="sat mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 19 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td id="calendar-2021-06-20" class="sun mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 20 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-21" class="mon mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 21 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-22" class="tue mini future has-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-on"> <a
+                                              href="#">22</a>
+                                          </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-23" class="wed mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 23 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-24" class="thu mini future has-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-on"> <a
+                                              href="#">24</a>
+                                          </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-25" class="fri mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 25 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-26" class="sat mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 26 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td id="calendar-2021-06-27" class="sun mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 27 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-28" class="mon mini future has-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-on"> <a
+                                              href="#">28</a>
+                                          </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-29" class="tue mini future has-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-on"> <a
+                                              href="#">29</a>
+                                          </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-06-30" class="wed mini future has-no-events">
+                                          <!--<div class=" ">  </div>-->
+                                          <div class="month mini-day-off"> 30 </div>
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-07-01" class="thu mini empty">
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-07-02" class="fri mini empty">
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                        <td id="calendar-2021-07-03" class="sat mini empty">
+                                          <div class="calendar-empty">&nbsp;</div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+
+
+
+
+
+
+                          </div>
+                        </section>
+                      </div>
+                    </aside>
+                  </div>
                 </div>
               </section>
               <div class="group-footer">
@@ -594,8 +935,7 @@
                         class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     <div class="collapse navbar-collapse" id="myNavbar">
                       <ul class="menu nav">
-                        <li class="first expanded active-trail active dropdown active"><a
-                            href="#" class="active-trail dropdown-toggle active"
+                        <li class="first expanded dropdown"><a href="#" class="dropdown-toggle"
                             data-toggle="dropdown">О компании <span class="caret"></span></a>
                           <ul class="dropdown-menu">
                             <li class="first leaf"><a href="#">История и награды</a>
@@ -636,7 +976,7 @@
                         <li class="expanded dropdown"><a href="#" class="dropdown-toggle"
                             data-toggle="dropdown">Комплекты <span class="caret"></span></a>
                           <ul class="dropdown-menu">
-                            <li class="first leaf"><a href="#" title="">Бухгалтеру</a></li>
+                            <li class="first leaf"><a href="/consult-plus/buhgalteru" title="">Бухгалтеру</a></li>
                             <li class="leaf"><a href="#" title="">Юристу</a></li>
                             <li class="leaf"><a href="#" title="">Адвокату</a></li>
                             <li class="leaf"><a href="#" title="">Бюджетнику</a></li>
@@ -694,7 +1034,7 @@
 
                   <div class="pane-content">
                     <div
-                      class="view view-content view-id-content view-display-id-block_1 row inf  view-dom-id-de5bb1fe9669dd2caf83ca485a143073">
+                      class="view view-content view-id-content view-display-id-block_1 row inf  view-dom-id-1bda788f6cf6b54250ecbda4b0ffc50f">
 
 
 
@@ -759,7 +1099,7 @@
                         <input class="form-control form-text required" type="text" id="edit-title" name="title" value=""
                           size="60" maxlength="255" /></div><input type="hidden" name="changed" value="" />
                       <input type="hidden" name="form_build_id"
-                        value="form-v8ulLWwidtezIwPToqE7xTl79_H-b-JqVNoQsnjd2R4" />
+                        value="form-mLtIXUHMT8z7y3PS1PfwaiDd6CRTG2yjHFPsGGzYJnc" />
                       <input type="hidden" name="form_id" value="call_node_form" />
                       <div
                         class="field-type-text field-name-field-tel field-widget-text-textfield form-wrapper form-group"
@@ -787,23 +1127,13 @@
       </section>
     </div>
   </footer>
-
-
-
-
-
   <script src="js/js_L50O_PWoAuMOxVjnzZCkNSSmI0kFwhZsO1_KS8WnGKw.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.0.9/jquery.mb.YTPlayer.min.js"></script>
-
-
-
-
-
-
   <script src="js/custom/input.js"></script>
   <script type="text/javascript" src="js/custom/datepicker.js"></script>
   <script type="text/javascript" src="js/dataform/dateFormat.js"></script>
   <script type="text/javascript" src="js/dataform/jquery.dateFormat.js"></script>
+ 
   <script src="js/custom/main.js"></script>
 </body>
 
